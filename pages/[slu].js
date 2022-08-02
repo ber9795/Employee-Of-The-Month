@@ -92,8 +92,10 @@ export const getServerSideProps = async pageContext => {
       },
     },
   ).then(res => res.json());
+  console.log()
 
   const { articles } = apiResponse;
+  console.log(articles)
 
   return {
     props: {
